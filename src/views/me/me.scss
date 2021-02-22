@@ -1,0 +1,32 @@
+.me{
+  margin: 1rem;
+
+  .bio{
+    height: fit-content;
+
+    //Spacing
+    padding: 1rem;
+
+    //Background & Border
+    background-color: $transparent-dark;
+    border-radius: 1rem;
+
+    .self{
+      width: 12rem;
+
+      margin: 1rem;
+
+      img{
+        width: 100%;
+        height: auto;
+        border-radius: 100%;
+        border: 0.25rem solid $primary-color;
+      }
+    }
+    .connect{
+      border: 0.25rem solid $primary-color;
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+  }
+}

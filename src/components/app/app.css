@@ -1,0 +1,521 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #f4b860;
+  border-bottom: 0.3rem solid #c83e4d;
+  margin-bottom: 1em;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+p, span, input, label {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 125%;
+  }
+
+  /*20px*/
+}
+@media screen and (min-width: 2500px) {
+  html {
+    font-size: 200%;
+  }
+
+  /*20px*/
+}
+@media screen and (min-width: 3500px) {
+  html {
+    font-size: 300%;
+  }
+
+  /*20px*/
+}
+@media screen and (min-width: 4500px) {
+  html {
+    font-size: 350%;
+  }
+
+  /*20px*/
+}
+@keyframes dimin {
+  0%, 50% {
+    color: #66cccc;
+  }
+  100% {
+    color: rgba(173, 31, 31, 0.75);
+  }
+}
+button {
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border: 0.25rem solid #c83e4d;
+  border-radius: 1rem;
+  background-color: #4a5859;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f4b860;
+  transition: all 0.5s ease-out;
+}
+button:hover {
+  transform: scale(1.2);
+  background-color: #f4b860;
+  color: #c83e4d;
+}
+
+.splashPage {
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+}
+
+header {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(74, 88, 89, 0.7);
+}
+header .codeBracket {
+  color: #c83e4d;
+}
+header .main {
+  color: #f4b860;
+}
+header .bracketed {
+  color: #f4d6cc;
+}
+header .Typewriter__cursor {
+  color: #f4d6cc;
+}
+header span {
+  line-height: 1em;
+  transition: font-size 1s;
+}
+header .main span, header .title span {
+  font-weight: 700;
+}
+header .title {
+  transition: all 1s;
+  padding-top: 0rem;
+}
+header .title span {
+  font-size: 0;
+}
+header .main {
+  padding-top: 1rem;
+}
+header .main .name {
+  display: flex;
+  justify-content: center;
+}
+header .name span {
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  padding: 0.5rem;
+  background-color: rgba(74, 88, 89, 0.7);
+  border-top: 0.5rem solid #c83e4d;
+  color: #f4d6cc;
+  transition: all 1s;
+}
+nav span {
+  font-size: 1.5rem;
+}
+
+.bgWrap {
+  --bubble-size: 10vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: fadeIn 2s ease-in;
+}
+.bgWrap .bgCode {
+  color: transparent;
+  font-size: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--bubble-size);
+  border-radius: 100%;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.5;
+  line-height: 20rem;
+  animation: code 10s ease-in-out forwards;
+}
+.bgWrap .one {
+  color: #f4b860;
+}
+.bgWrap .two {
+  color: #4a5859;
+}
+.bgWrap .three {
+  color: #c83e4d;
+}
+.bgWrap .four {
+  color: #4a5859;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bubbleRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes code {
+  0%, 100% {
+    transform: scale(2);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+.bgWrap:nth-child(1) {
+  animation-delay: 1s;
+  -webkit-animation-delay: 0.1s;
+}
+
+.bgWrap:nth-child(2) {
+  animation-delay: 2s;
+  -webkit-animation-delay: 0.2s;
+}
+
+.bgWrap:nth-child(3) {
+  animation-delay: 3s;
+  -webkit-animation-delay: 0.3s;
+}
+
+.bgWrap:nth-child(4) {
+  animation-delay: 4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+.work .featProj {
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgba(74, 88, 89, 0.7);
+  border-radius: 1rem;
+}
+.work .featProj h2 {
+  font-size: 1.5rem;
+  transition: all 1s;
+}
+.work .featProj .projThumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 15rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.5rem solid #f4d6cc;
+  background-color: white;
+  border-radius: 1rem;
+  transition: all 1s;
+}
+.work .featProj .projThumb img {
+  transition: all 1s;
+  width: 100%;
+  height: auto;
+}
+.work .featProj .projThumb:hover {
+  border-color: #c83e4d;
+}
+.work .featProj .projThumb:hover img {
+  transform: scale(1.1);
+}
+.work .featProj .projThumb.active {
+  border-color: #f4b860;
+}
+.work .project {
+  box-sizing: border-box;
+  background-color: rgba(74, 88, 89, 0.7);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.work .project .projHeaders .col {
+  border-bottom: 0.25rem solid #c83e4d;
+  margin-bottom: 1rem;
+}
+.work .project .projHeaders .col .projTitle {
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 2rem;
+  color: #f4b860;
+  border: none;
+}
+.work .project .projHeaders .col .projSubtitle {
+  font-size: 1.5rem;
+  color: #f4d6cc;
+}
+.work .project .projDescr p {
+  color: #f4d6cc;
+}
+.work .project .projScreens .screenframe {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work .project .projScreens .screenframe svg {
+  fill: #32373b;
+  padding: 1%;
+  height: fit-content;
+}
+.work .project .projScreens .screenframe .screenshot {
+  position: absolute;
+  border: 0.2rem solid #f4b860;
+  overflow: hidden;
+  transition: border-color 0.5s;
+}
+.work .project .projScreens .screenframe .screenshot img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s;
+}
+.work .project .projScreens .screenframe:hover .screenshot {
+  border-color: #c83e4d;
+}
+.work .project .projScreens .screenframe:hover .screenshot img {
+  transform: scale(1.2);
+}
+.work .project .projScreens .screenframe.desktop svg {
+  width: 100%;
+  height: auto;
+}
+.work .project .projScreens .screenframe.desktop svg path {
+  width: 100%;
+}
+.work .project .projScreens .screenframe.desktop .screenshot {
+  top: 20%;
+  left: 8%;
+  width: 84%;
+  height: auto;
+  border-radius: 5%;
+}
+.work .project .projScreens .screenframe.mobile {
+  width: 100%;
+  height: auto;
+}
+.work .project .projScreens .screenframe.mobile svg {
+  width: 100%;
+  height: auto;
+}
+.work .project .projScreens .screenframe.mobile .screenshot {
+  top: 5%;
+  left: 29%;
+  width: 42%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.me {
+  margin: 1rem;
+}
+.me .bio {
+  height: fit-content;
+  padding: 1rem;
+  background-color: rgba(74, 88, 89, 0.7);
+  border-radius: 1rem;
+}
+.me .bio .self {
+  width: 12rem;
+  margin: 1rem;
+}
+.me .bio .self img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  border: 0.25rem solid #f4b860;
+}
+.me .bio .connect {
+  border: 0.25rem solid #f4b860;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.techList {
+  width: fit-content;
+  padding: 1rem;
+  margin: 1rem auto;
+  border: 0.25rem solid #f4b860;
+  border-radius: 1rem;
+}
+.techList .techTitle {
+  width: fit-content;
+  padding: 0.25rem;
+  border-bottom: 0.25rem solid #c83e4d;
+  color: #f4b860;
+}
+
+.itemBox {
+  position: relative;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #c83e4d;
+  border: 0.25rem solid #f4b860;
+  border-radius: 1rem;
+  transition: transform 0.25s;
+}
+.itemBox .itemName {
+  position: absolute;
+  bottom: -1rem;
+  width: 100%;
+  background-color: #f4b860;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.itemBox .itemName p {
+  width: min-content;
+  margin: 0 auto;
+  font-size: 0;
+  color: #c83e4d;
+  transition: font-size 0.25s;
+}
+.itemBox .itemIcon {
+  width: 3rem;
+}
+.itemBox .itemIcon img {
+  width: 100%;
+  height: auto;
+}
+.itemBox .itemIcon svg {
+  fill: #f4d6cc;
+  width: 100%;
+  height: auto;
+}
+.itemBox:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+.itemBox:hover .itemName p {
+  font-size: 0.75rem;
+}
+
+html {
+  height: fit-content;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #32373b;
+}
+
+body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+html, body, .App, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #32373b;
+}
+.App .splashPage {
+  margin-top: 0;
+  transition: margin-top 2s;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  margin: 2rem 0;
+  color: #f4d6cc;
+  transition: opacity 1s ease-out;
+  opacity: 1;
+}
+
+.App.splash {
+  overflow-y: hidden;
+  height: 100vh;
+}
+.App.splash .splashPage {
+  margin-top: calc(50vh - 11vw);
+  overflow-y: hidden;
+  transition: margin-top 2s;
+}
+.App.splash .splashPage header .main span {
+  font-size: 10vw;
+}
+.App.splash .splashPage header .title {
+  height: fit-content;
+  padding-top: 0.5rem;
+}
+.App.splash .splashPage header .title span {
+  font-size: 8vw;
+}
+.App.splash .splashPage nav {
+  padding: 1rem;
+}
+.App.splash .splashPage nav span {
+  font-size: 2rem;
+}
+.App.splash main {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+/*# sourceMappingURL=app.css.map */

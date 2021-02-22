@@ -1,0 +1,23 @@
+button{
+  //Spacing
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+
+  //Border & Background
+  border: 0.25rem solid $med-accent;
+  border-radius: 1rem;
+  background-color: $dark-accent;
+
+  //Text
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $primary-color;
+
+  transition: all 0.5s ease-out;
+
+  &:hover{
+    transform: scale(1.2);
+    background-color: $primary-color;
+    color: $med-accent;
+  }
+}

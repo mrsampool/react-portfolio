@@ -1,0 +1,199 @@
+
+
+.work{
+
+  .featProj{
+
+    //Sizing
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+
+    //Background & Border
+    background-color: $transparent-dark;
+    border-radius: 1rem;
+
+    h2{
+      font-size: 1.5rem;
+      transition: all 1s;
+    }
+
+    .projThumb{
+
+      //Display
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      //Sizing
+      max-width: 15rem;
+      padding: 1rem;
+      margin: 1rem;
+
+      //Background & Border
+      border: 0.5rem solid $light-accent;
+      background-color: white;
+      border-radius: 1rem;
+
+      //Misc
+      transition: all 1s;
+
+      img{
+        transition: all 1s;
+        width: 100%;
+        height: auto;
+      }
+
+      &:hover{
+        border-color: $med-accent;
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+    .projThumb.active{
+      border-color: $primary-color;
+    }
+  }
+  .project{
+
+    box-sizing: border-box;
+
+    background-color: $transparent-dark;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    .projHeaders{
+      .col{
+        border-bottom: 0.25rem solid $med-accent;
+        margin-bottom: 1rem;
+
+        .projTitle{
+
+          //Spacing
+          margin-bottom: 0;
+          padding: 0;
+
+          //Text
+          font-size: 2rem;
+          color: $primary-color;
+
+          //Border
+          border: none;
+        }
+        .projSubtitle{
+
+          //Text
+          font-size: 1.5rem;
+          color: $light-accent;
+        }
+      }
+    }
+    .projDescr p{
+      color: $light-accent;
+    }
+    .projScreens{
+      .screenframe{
+
+        //Postion
+        position: relative;
+
+        //Sizing
+        height: fit-content;
+        width: 100%;
+
+        //Display
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        svg{
+          fill: $background-color;
+          padding: 1%;
+          height: fit-content;
+        }
+        .screenshot{
+          //Position
+          position: absolute;
+          border: 0.2rem solid $primary-color;
+          overflow: hidden;
+          transition: border-color 0.5s;
+
+          img{
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+          }
+        }
+
+        &:hover{
+          .screenshot{
+            border-color: $med-accent;
+
+            img{
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+      .screenframe.desktop{
+
+        svg{
+          //Sizing
+          width: 100%;
+          height: auto;
+
+          path{
+            width: 100%;
+          }
+
+        }
+        .screenshot{
+          //Sizing Variables
+          $screenshot-width: 84%;
+          $screenshot-margin: (100% - $screenshot-width) / 2;
+
+          //Position
+          top: 20%;
+          left: $screenshot-margin;
+
+          //Sizing
+          width: $screenshot-width;
+          height: auto;
+
+          //Border
+          border-radius: 5%;
+        }
+      }
+      .screenframe.mobile{
+
+        width: 100%;
+        height: auto;
+
+        svg{
+          width: 100%;
+          height: auto;
+        }
+        .screenshot{
+          //Sizing Variables
+          $screenshot-width: 42%;
+          $screenshot-margin: (100% - $screenshot-width) / 2;
+
+          //Position
+          top: 5%;
+          left: $screenshot-margin;
+
+          //Sizing
+          width: $screenshot-width;
+          height: auto;
+
+          //Border
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+
+}

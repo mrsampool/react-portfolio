@@ -1,0 +1,26 @@
+.techList{
+  width: fit-content;
+
+  //Spacing
+  padding: 1rem;
+  margin: 1rem auto;
+
+  //Border
+  border: 0.25rem solid $primary-color;
+  border-radius: 1rem;
+
+  .techTitle{
+
+    //Sizing
+    width: fit-content;
+    padding: 0.25rem;
+
+    //Background & Border
+    //border-radius: 1rem;
+    border-bottom: 0.25rem solid $med-accent;
+    //background-color: $primary-color;
+
+    //Text
+    color: $primary-color;
+  }
+}

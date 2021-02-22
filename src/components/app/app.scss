@@ -1,0 +1,102 @@
+// Partials
+@import "colors";
+@import "text";
+@import "animations";
+@import "elements";
+
+//Components
+@import "../header/header";
+@import"../bg/bg";
+@import "../../views/work/work";
+@import "../../views/me/me";
+@import "../techList/techList.scss";
+@import "../itemBox/itemBox.scss";
+
+html{
+  //width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: $background-color;
+}
+body,#root{
+  width: 100%;
+  height: 100%;
+}
+html,body,.App,#root{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Page Mode
+.App{
+  position: relative;
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: $background-color;
+
+  .splashPage{
+    margin-top: 0;
+    transition: margin-top 2s;
+  }
+}
+main{
+  //Position
+  position: relative;
+  z-index: 2;
+
+  //Spacing
+  padding: 1rem;
+  margin: 2rem 0;
+
+  //Text
+  color: $light-accent;
+
+  //Transition / Animation
+  transition: opacity 1s ease-out;
+  opacity: 1;
+}
+
+//Splash Mode
+.App.splash{
+
+  overflow-y: hidden;
+  height: 100vh;
+
+  .splashPage{
+    margin-top: calc(50vh - 11vw);
+    overflow-y: hidden;
+    transition: margin-top 2s;
+
+    header{
+      .main{
+
+        span {
+          font-size: 10vw;
+        }
+
+      }
+      .title{
+        height: fit-content;
+        padding-top: 0.5rem;
+
+        span{
+          font-size: 8vw;
+        }
+      }
+    }
+    nav{
+      //margin-top: 15vh;
+      padding: 1rem;
+
+      span{
+        font-size: 2rem;
+      }
+    }
+  }
+  main{
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+}

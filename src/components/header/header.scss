@@ -1,0 +1,85 @@
+.splashPage{
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+}
+header{
+
+  position: relative;
+  top: 0;
+
+  //Display
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  //Sizing:
+  width: 100%;
+  //padding: 1rem;
+
+  background-color: $transparent-dark;
+
+  //Text Colors
+  .codeBracket {color: $med-accent;}
+  .main {color: $primary-color;}
+  .bracketed {color: $light-accent;}
+  .Typewriter__cursor {color: $light-accent;}
+
+  span {
+    line-height: 1em;
+    transition: font-size 1s;
+  }
+
+  .main,.title{
+    span{
+      font-weight: 700;
+    }
+  }
+
+  .title{
+    transition: all 1s;
+    padding-top: 0rem;
+    //height: 0;
+
+    span{
+      font-size: 0;
+    }
+  }
+
+  .main{
+    padding-top: 1rem;
+
+    .name{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .name{
+    span{
+      font-size: 2rem;
+    }
+  }
+
+}
+nav{
+
+  display: flex;
+
+  padding: 0.5rem;
+
+  //Background & Border
+  background-color: $transparent-dark;
+  border-top: 0.5rem solid $med-accent;
+
+  //Text
+  color: $light-accent;
+
+  //Misc
+  transition: all 1s;
+
+  span{
+    font-size: 1.5rem;
+  }
+
+}

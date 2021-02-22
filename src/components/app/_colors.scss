@@ -1,0 +1,17 @@
+// COLORS
+$feldgrau: #4a5859;
+$sunray: #f4b860;
+$brick-red: #c83e4d;
+$unbleached-silk: #f4d6cc;
+$onyx: #32373b;
+
+//COLOR SCHEME
+$background-color: $onyx;
+$primary-color: $sunray;
+$light-accent: $unbleached-silk;
+$med-accent: $brick-red;
+$dark-accent: $feldgrau;
+
+//MODIFIED COLORS
+$transparent-dark: fade-out($dark-accent, 0.3);
+$transparent-primary: fade-out($primary-color, 0.3);

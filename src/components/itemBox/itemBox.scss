@@ -1,0 +1,67 @@
+.itemBox{
+
+  position: relative;
+
+  //Sizing
+  margin: 0.5rem;
+  padding: 0.5rem;
+
+  //Background & Border
+  background-color: $med-accent;
+  border: 0.25rem solid $primary-color;
+  border-radius: 1rem;
+
+  //Transitions
+  transition: transform 0.25s;
+
+  .itemName{
+    //Position
+    position: absolute;
+    bottom: -1rem;
+
+    //Sizing
+    width: 100%;
+
+    //Background & Border
+    background-color: $primary-color;
+    border-radius: 0.5rem;
+
+    text-align: center;
+
+    p{
+      //Sizing & Spacing
+      width: min-content;
+      margin: 0 auto;
+
+      //Text
+      font-size: 0;
+      color: $med-accent;
+
+      //Transition / Animation
+      transition: font-size 0.25s;
+    }
+  }
+  .itemIcon{
+    width: 3rem;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+    svg{
+      fill: $light-accent;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &:hover{
+    transform: scale(1.3);
+    z-index: 2;
+    .itemName p{
+      font-size: 0.75rem;
+    }
+  }
+
+
+}
