@@ -9,8 +9,11 @@ export function SplashName(props){
     return(
         <div className={'name col text-center'}>
             <Typewriter
+                options={{
+                    delay: 75
+                }}
                 onInit={(typewriter) => {
-                    typewriter.pauseFor(3000)
+                    typewriter.pauseFor(4500)
                         .typeString(
                             "<span class='main'>SAM</span>" +
                             "<span class='codeBracket'>{</span>" +
@@ -28,8 +31,11 @@ export function SplashTitle(props){
     return(
         <div className={'col text-center'}>
             <Typewriter
+                options={{
+                    delay: 50
+                }}
                 onInit={(typewriter) => {
-                    typewriter.pauseFor(3000)
+                    typewriter.pauseFor(4500)
                         .typeString(
                             "<span class='codeBracket'>{</span>" +
                             "<span class='bracketed'>frontEnd</span>" +
