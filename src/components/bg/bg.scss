@@ -42,12 +42,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      opacity: 0.5;
+      opacity: 0;
 
       //Text
       font-size: 70vh;
       line-height: 1em;
-      font-weight: bold;
+      letter-spacing: 2rem;
 
       //Animation
       animation: code 10s ease-in-out forwards;
@@ -94,7 +94,7 @@
 @keyframes code{
   0%,100%{
     transform: scale(1);
-    opacity: 0.2;
+    opacity: 0.15;
   }
   50%{
     transform: scale(0.5);

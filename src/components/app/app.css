@@ -106,7 +106,7 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: rgba(74, 88, 89, 0.7);
+  background-color: #4a5859;
   transition: all 1s;
   animation: fadeIn 2s ease-out forwards;
   animation-delay: 4s;
@@ -152,7 +152,7 @@ header .name span {
 nav {
   display: flex;
   padding: 0.5rem;
-  background-color: rgba(74, 88, 89, 0.7);
+  background-color: #4a5859;
   border-top: 0.5rem solid #c83e4d;
   color: #f4d6cc;
   margin-top: 100vh;
@@ -170,7 +170,7 @@ nav span:hover {
   cursor: pointer;
 }
 nav span.active {
-  border-bottom: 0.5rem solid #f4d6cc;
+  border-bottom: 0.5rem solid #f4b860;
 }
 
 @keyframes fromBottom {
@@ -215,10 +215,10 @@ nav span.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.5;
+  opacity: 0;
   font-size: 70vh;
   line-height: 1em;
-  font-weight: bold;
+  letter-spacing: 2rem;
   animation: code 10s ease-in-out forwards;
   transform: translate3d(0, 0, 0);
 }
@@ -264,7 +264,7 @@ nav span.active {
 @keyframes code {
   0%, 100% {
     transform: scale(1);
-    opacity: 0.2;
+    opacity: 0.15;
   }
   50% {
     transform: scale(0.5);
@@ -300,7 +300,7 @@ nav span.active {
   height: fit-content;
   padding: 1rem;
   margin: 1rem;
-  background-color: rgba(74, 88, 89, 0.7);
+  background-color: #4a5859;
   border-radius: 1rem;
 }
 .work .featProj h2 {
@@ -335,7 +335,7 @@ nav span.active {
 }
 .work .project {
   box-sizing: border-box;
-  background-color: rgba(74, 88, 89, 0.7);
+  background-color: #4a5859;
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -424,11 +424,12 @@ nav span.active {
 .me .bio {
   height: fit-content;
   padding: 1rem;
-  background-color: rgba(74, 88, 89, 0.7);
+  background-color: #4a5859;
   border-radius: 1rem;
 }
 .me .bio .self {
   margin: 1rem;
+  border-radius: 100%;
 }
 .me .bio .self img {
   width: 100%;
@@ -449,6 +450,7 @@ nav span.active {
   margin: 1rem auto;
   border: 0.25rem solid #f4b860;
   border-radius: 1rem;
+  background-color: rgba(74, 88, 89, 0.7);
 }
 .techList .techTitle {
   width: fit-content;
