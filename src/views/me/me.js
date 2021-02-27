@@ -102,7 +102,7 @@ export function Me(props){
 
                         <p>Currently my primary technical strengths are JavaScript & React.js, but you can see the wide assortment of technologies I have experience with listed in this page's "tech" box.</p>
 
-                        <p>P.S. - My main hobbies are cruising mountain roads and taking landscape photos with my FujiFilm xt100 - check out my IG you're interested.</p>
+                        <p>P.S. - My main hobbies are cruising mountain roads and taking landscape photos with my FujiFilm xt100 - check out my IG if you're interested.</p>
                     </div>
 
                 </div>
