@@ -107,6 +107,10 @@ header {
   align-items: center;
   width: 100%;
   background-color: rgba(74, 88, 89, 0.7);
+  transition: all 1s;
+  animation: fadeIn 2s ease-out forwards;
+  animation-delay: 4s;
+  opacity: 0;
 }
 header .codeBracket {
   color: #c83e4d;
@@ -151,14 +155,41 @@ nav {
   background-color: rgba(74, 88, 89, 0.7);
   border-top: 0.5rem solid #c83e4d;
   color: #f4d6cc;
+  margin-top: 100vh;
   transition: all 1s;
+  animation: fromBottom 2s ease-out forwards;
+  animation-delay: 5s;
 }
 nav span {
   font-size: 1.5rem;
+  border-color: transparent;
+  transition: border-color 0.5s;
+}
+nav span:hover {
+  border-bottom: 0.5rem solid #c83e4d;
+  cursor: pointer;
+}
+nav span.active {
+  border-bottom: 0.5rem solid #f4d6cc;
 }
 
+@keyframes fromBottom {
+  0% {
+    margin-top: 100vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes fromTop {
+  0% {
+    margin-bottom: 100vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
 .bgWrap {
-  --bubble-size: 10vw;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -167,36 +198,52 @@ nav span {
   display: flex;
   padding: 0;
   margin: 0;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   overflow: hidden;
   animation: fadeIn 2s ease-in;
 }
-.bgWrap .bgCode {
-  color: transparent;
-  font-size: 20rem;
+.bgWrap .codeRow {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+}
+.bgWrap .codeRow .bgCode {
+  width: 20vw;
+  height: fit-content;
+  margin-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: var(--bubble-size);
-  border-radius: 100%;
-  transform: translate3d(0, 0, 0);
   opacity: 0.5;
-  line-height: 20rem;
+  font-size: 70vh;
+  line-height: 1em;
+  font-weight: bold;
   animation: code 10s ease-in-out forwards;
+  transform: translate3d(0, 0, 0);
 }
-.bgWrap .one {
-  color: #f4b860;
-}
-.bgWrap .two {
-  color: #4a5859;
-}
-.bgWrap .three {
+.bgWrap .codeRow .bgCode.one {
   color: #c83e4d;
 }
-.bgWrap .four {
+.bgWrap .codeRow .bgCode.two {
   color: #4a5859;
+}
+.bgWrap .codeRow .bgCode.three {
+  color: #f4b860;
+}
+.bgWrap .codeRow .bgCode.four {
+  color: #4a5859;
+}
+.bgWrap .codeRow .bgCode.five {
+  color: #c83e4d;
+}
+.bgWrap .codeRow.top {
+  align-items: center;
+  justify-content: center;
+}
+.bgWrap .codeRow.bottom {
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes fadeIn {
@@ -216,11 +263,11 @@ nav span {
 
 @keyframes code {
   0%, 100% {
-    transform: scale(2);
+    transform: scale(1);
     opacity: 0.2;
   }
   50% {
-    transform: scale(1);
+    transform: scale(0.5);
   }
 }
 .bgWrap:nth-child(1) {
@@ -241,6 +288,11 @@ nav span {
 .bgWrap:nth-child(4) {
   animation-delay: 4s;
   -webkit-animation-delay: 0.4s;
+}
+
+.bgWrap:nth-child(5) {
+  animation-delay: 5s;
+  -webkit-animation-delay: 0.5s;
 }
 
 .work .featProj {
@@ -376,6 +428,7 @@ nav span {
   border-radius: 1rem;
 }
 .me .bio .self {
+  float: left;
   width: 12rem;
   margin: 1rem;
 }
@@ -453,12 +506,12 @@ html {
   height: fit-content;
   min-height: 100vh;
   box-sizing: border-box;
-  background-color: #32373b;
 }
 
 body, #root {
   width: 100%;
   height: 100%;
+  background-color: #32373b;
 }
 
 html, body, .App, #root {
@@ -471,7 +524,6 @@ html, body, .App, #root {
   position: relative;
   min-height: 100vh;
   font-family: "Josefin Sans", sans-serif;
-  background-color: #32373b;
 }
 .App .splashPage {
   margin-top: 0;
@@ -516,6 +568,17 @@ main {
 .App.splash main {
   opacity: 0;
   transition: opacity 1s ease-out;
+}
+
+@media (max-width: 768px) {
+  .App.splash .splashPage {
+    margin-top: 0;
+  }
+}
+@media (max-height: 600px) {
+  .App.splash .splashPage {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

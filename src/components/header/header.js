@@ -76,15 +76,21 @@ export function Header(props){
                 <nav className={'row no-gutters'}>
 
                     <div className={'col-md text-center'}>
-                        <span onClick={home}> HOME </span>
+                        <span className={
+                            `${props.page === 'splash' ? 'active' :''}`
+                        } onClick={home}> HOME </span>
                     </div>
 
                     <div className={'col-md text-center'}>
-                        <span onClick={work}> MY WORK </span>
+                        <span className={
+                            `${props.page === 'work' ? 'active' :''}`
+                        } onClick={work}> MY WORK </span>
                     </div>
 
                     <div className={'col-md text-center'}>
-                        <span onClick={me}>ABOUT ME</span>
+                        <span className={
+                            `${props.page === 'me' ? 'active' :''}`
+                        } onClick={me}>ABOUT ME</span>
                     </div>
 
                 </nav>

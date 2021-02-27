@@ -26,6 +26,7 @@ export function App(props) {
 
             <Header
                 setPage={setPage}
+                page={page}
             />
 
             <main className={'row no-gutters'}>

@@ -20,6 +20,12 @@ import bootstrapLogo from './techIcons/bootstrap.png';
 import avadaLogo from './techIcons/avada.png';
 import webstormLogo from './techIcons/webstorm.png';
 import vscodeLogo from './techIcons/vscode.png';
+import jQueryLogo from './techIcons/jQuery.png';
+import nodeLogo from './techIcons/node.png';
+import expressLogo from './techIcons/ExpressJS.png';
+import gitLogo from './techIcons/git.png';
+import sqlLogo from './techIcons/sql.png';
+import javaLogo from './techIcons/java.png';
 
 //Project Images
 //GWE
@@ -52,13 +58,13 @@ export const tech = {
         name: 'JavaScript',
         icon: jsLogo,
     },
-    jest: {
-        name: 'Jest',
-        icon: jestLogo
+    css: {
+        name: 'CSS3',
+        icon: cssLogo
     },
-    mocha: {
-        name: 'Mocha',
-        icon: mochaLogo
+    html: {
+        name: 'HTML5',
+        icon: htmlLogo
     },
     sass: {
         name: 'SASS',
@@ -68,13 +74,37 @@ export const tech = {
         name: 'Bootstrap 4',
         icon: bootstrapLogo
     },
-    css: {
-        name: 'CSS3',
-        icon: cssLogo
+    jQuery: {
+        name: 'jQuery',
+        icon: jQueryLogo
     },
-    html: {
-        name: 'HTML5',
-        icon: htmlLogo
+    node: {
+        name: 'Node.js',
+        icon: nodeLogo
+    },
+    express: {
+        name: 'Express.js',
+        icon: expressLogo
+    },
+    git: {
+        name: 'Git',
+        icon: gitLogo
+    },
+    jest: {
+        name: 'Jest',
+        icon: jestLogo
+    },
+    mocha: {
+        name: 'Mocha',
+        icon: mochaLogo
+    },
+    sql: {
+        name: 'SQL',
+        icon: sqlLogo
+    },
+    java: {
+        name: 'Java',
+        icon: javaLogo
     },
     gitHub: {
         name: 'GitHub',
@@ -113,7 +143,7 @@ export const tech = {
 export const projects = {
     gwe: {
         title: 'The Global Warming Express',
-        subtitle: 'Online Learning App',
+        subtitle: 'Online Learning App (In Development)',
         logo: gweLogo,
         descr: [
             `Educational web app developed for the non-profit organization The Global Warming Express, an organization which educates children ages 9-12 about the impacts of global warming and related topics.`,

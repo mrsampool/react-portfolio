@@ -17,11 +17,11 @@ html{
   height: fit-content;
   min-height: 100vh;
   box-sizing: border-box;
-  background-color: $background-color;
 }
 body,#root{
   width: 100%;
   height: 100%;
+  background-color: $background-color;
 }
 html,body,.App,#root{
   margin:0;
@@ -34,7 +34,7 @@ html,body,.App,#root{
   position: relative;
   min-height: 100vh;
   font-family: 'Josefin Sans', sans-serif;
-  background-color: $background-color;
+  //background-color: $background-color;
 
   .splashPage{
     margin-top: 0;
@@ -98,5 +98,20 @@ main{
   main{
     opacity: 0;
     transition: opacity 1s ease-out;
+  }
+}
+
+@media (max-width: 768px){
+  .App.splash{
+    .splashPage{
+      margin-top: 0;
+    }
+  }
+}
+@media (max-height: 600px){
+  .App.splash{
+    .splashPage{
+      margin-top: 0;
+    }
   }
 }

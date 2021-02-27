@@ -1,64 +1,81 @@
 //BG
 .bgWrap{
-  --bubble-size: 10vw;
 
+  //Position
   position: fixed;
   z-index: 1;
-
   top: 0;
+
+  //Sizing
   width: 100%;
   height: 100%;
   display: flex;
 
-
-
+  //Spacing
   padding: 0;
   margin: 0;
 
+  //Display
+  flex-direction: column;
 
-  flex-direction: row;
-
-  align-items: center;
-  justify-content: center;
-
+  justify-content: space-evenly;
   overflow: hidden;
 
   animation: fadeIn 2s ease-in;
 
-  .bgCode{
+  .codeRow{
+    width: 100%;
+    height: 50vh;
 
-    color: transparent;
-
-    font-size: 20rem;
     display: flex;
-    justify-content: center;
+
+    .bgCode{
+
+      //Sizing
+      width: 20vw;
+      height: fit-content;
+
+      //Spacing
+      margin-bottom: 0;
+
+      //Display
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.5;
+
+      //Text
+      font-size: 70vh;
+      line-height: 1em;
+      font-weight: bold;
+
+      //Animation
+      animation: code 10s ease-in-out forwards;
+      transform: translate3d(0,0,0);
+    }
+    .bgCode.one{
+      color: $med-accent;
+    }
+    .bgCode.two{
+      color: $dark-accent;
+    }
+    .bgCode.three{
+      color: $primary-color;
+    }
+    .bgCode.four{
+      color: $dark-accent;
+    }
+    .bgCode.five{
+      color: $med-accent;
+    }
+  }
+  .codeRow.top{
     align-items: center;
-
-    width: var(--bubble-size);
-
-    border-radius: 100%;
-
-    transform: translate3d(0,0,0);
-
-    opacity: 0.5;
-
-    line-height: 20rem;
-
-    animation: code 10s ease-in-out forwards;
-
+    justify-content: center;
   }
-
-  .one{
-    color: $primary-color;
-  }
-  .two{
-    color: $dark-accent;
-  }
-  .three{
-    color: $med-accent;
-  }
-  .four{
-    color: $dark-accent;
+  .codeRow.bottom{
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -76,15 +93,15 @@
 }
 @keyframes code{
   0%,100%{
-    transform: scale(2);
+    transform: scale(1);
     opacity: 0.2;
   }
   50%{
-    transform: scale(1);
+    transform: scale(0.5);
   }
 }
 
-@for $i from 1 through 4{
+@for $i from 1 through 5{
 
   .bgWrap:nth-child(#{$i}){
 

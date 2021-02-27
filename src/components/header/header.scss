@@ -2,6 +2,11 @@
   position: relative;
   z-index: 2;
   margin-top: 0;
+
+
+
+  //animation: fadeIn 2s ease-in forwards;
+  //animation-delay: 2s;
 }
 header{
 
@@ -19,6 +24,11 @@ header{
 
   background-color: $transparent-dark;
 
+  transition: all 1s;
+  animation: fadeIn 2s ease-out forwards;
+  animation-delay: 4s;
+  opacity: 0;
+
   //Text Colors
   .codeBracket {color: $med-accent;}
   .main {color: $primary-color;}
@@ -29,13 +39,11 @@ header{
     line-height: 1em;
     transition: font-size 1s;
   }
-
   .main,.title{
     span{
       font-weight: 700;
     }
   }
-
   .title{
     transition: all 1s;
     padding-top: 0rem;
@@ -45,7 +53,6 @@ header{
       font-size: 0;
     }
   }
-
   .main{
     padding-top: 1rem;
 
@@ -54,13 +61,11 @@ header{
       justify-content: center;
     }
   }
-
   .name{
     span{
       font-size: 2rem;
     }
   }
-
 }
 nav{
 
@@ -76,10 +81,33 @@ nav{
   color: $light-accent;
 
   //Misc
+  margin-top: 100vh;
   transition: all 1s;
+  animation: fromBottom 2s ease-out forwards;
+  animation-delay: 5s;
 
   span{
     font-size: 1.5rem;
+    border-color: transparent;
+    transition: border-color 0.5s;
+
+    &:hover{
+      border-bottom: 0.5rem solid $med-accent;
+      cursor: pointer;
+    }
+  }
+  span.active{
+    border-bottom: 0.5rem solid $light-accent;
   }
 
+
+}
+
+@keyframes fromBottom{
+  0%{margin-top: 100vh}
+  100%{margin-top: 0}
+}
+@keyframes fromTop{
+  0%{margin-bottom: 100vh}
+  100%{margin-top: 0}
 }
