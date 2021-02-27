@@ -86,7 +86,7 @@ export function Me(props){
 
                     <div className={'col text-center text-lg-left'}>
 
-                        <div className={'self'}>
+                        <div className={'self float-sm-left'}>
                             <img src={self}/>
                         </div>
 
@@ -94,9 +94,9 @@ export function Me(props){
 
                         <p>My experience with web development started when I was 12 years old and began creating my own Flash games and cartoons, and building websites to share them with the world.</p>
 
-                        <p>After college, my original career path was as an Assistant Director in the film and television industry, managing production schedules and logistics for complicated feature film and commercial productions.</p>
+                        <p>My original career path was as an Assistant Director in the film and television industry, managing production schedules and logistics for complicated feature film and commercial productions.</p>
 
-                        <p>In 2015, my experience with web development and media production collided when I landed a contract to develop a brochure-style website, as well as produce original video and photo content, for electronics manufacturer BetaTron Electronics, and have been building my web development skills and professional web portfolio ever since.</p>
+                        <p>In 2015, my experience with web development and media production collided when I landed a contract to develop a website, as well as produce original video and photo content, for electronics manufacturer BetaTron Electronics, and have been building my web development skills and professional web portfolio ever since.</p>
 
                         <p>Even now that my career has shifted exclusively into web development contracts (other than creating occasional production schedules for multi-million-dollar movies on the side from time-to-time), my background in media production still comes in handy for web contracts that require producing original media content. In my latest project, an online learning app, in addition to being the sole web developer, I also managed all audio content production and original illustration development. Since the app is available in multiple languages, I also managed the media translations (Spanish & coming soon: French), which include a separate audio production unit for the alternate-language audio.</p>
 

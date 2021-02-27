@@ -12,13 +12,14 @@
     border-radius: 1rem;
 
     .self{
-      float: left;
-      width: 12rem;
+      //float: left;
+      //width: 12rem;
 
       margin: 1rem;
 
       img{
         width: 100%;
+        max-width: 15rem;
         height: auto;
         border-radius: 100%;
         border: 0.25rem solid $primary-color;
