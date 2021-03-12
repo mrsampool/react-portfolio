@@ -23,7 +23,7 @@ export function BG(props){
                 <p className={'bgCode four'}>{"<${&}"}</p>
             </div>
             <div className={'codeRow bottom'}>
-                <p className={'bgCode one'}>{"{<=%>=$}"}</p>
+                <p className={'bgCode one'}>{"{<=%>=*$}"}</p>
                 <p className={'bgCode two'}>{"{<=%>=$}"}</p>
                 <p className={'bgCode three'}>{"{<=%>=$}"}</p>
                 <p className={'bgCode four'}>{"{<=%>=$}"}</p>

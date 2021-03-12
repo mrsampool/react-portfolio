@@ -3,8 +3,9 @@
 
   //Position
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
+  background-color: $background-color;
 
   //Sizing
   width: 100%;
