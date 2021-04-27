@@ -38,9 +38,9 @@ export function SplashTitle(props){
                     typewriter.pauseFor(4500)
                         .typeString(
                             "<span class='codeBracket'>{</span>" +
-                            "<span class='bracketed'>frontEnd</span>" +
+                            "<span class='bracketed'>web</span>" +
                             "<span class='codeBracket'>}</span>" +
-                            "<span class='main'>webDev</span>"
+                            "<span class='main'>Dev</span>"
                         )
                         .start();
                 }}

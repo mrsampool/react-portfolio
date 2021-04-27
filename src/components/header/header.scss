@@ -5,13 +5,16 @@
 
 
 
-  //animation: fadeIn 2s ease-in forwards;
-  //animation-delay: 2s;
+  animation: fadeIn 2s ease-in forwards;
+  animation-delay: 2s;
 }
 header{
 
+
+
   position: relative;
   top: 0;
+  z-index: 10;
 
   //Display
   display: flex;

@@ -97,11 +97,14 @@ button:hover {
   position: relative;
   z-index: 2;
   margin-top: 0;
+  animation: fadeIn 2s ease-in forwards;
+  animation-delay: 2s;
 }
 
 header {
   position: relative;
   top: 0;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,7 +194,7 @@ nav span.active {
 }
 .bgWrap {
   position: fixed;
-  z-index: 5;
+  z-index: 1;
   top: 0;
   background-color: #32373b;
   width: 100%;
