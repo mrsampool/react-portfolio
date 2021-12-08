@@ -1,6 +1,5 @@
 //BG
-.bgWrap{
-
+.bgWrap {
   //Position
   position: fixed;
   z-index: 1;
@@ -24,14 +23,13 @@
 
   animation: fadeIn 2s ease-in;
 
-  .codeRow{
+  .codeRow {
     width: 100%;
     height: 50vh;
 
     display: flex;
 
-    .bgCode{
-
+    .bgCode {
       //Sizing
       width: 20vw;
       height: fit-content;
@@ -52,60 +50,63 @@
 
       //Animation
       animation: code 10s ease-in-out forwards;
-      transform: translate3d(0,0,0);
+      transform: translate3d(0, 0, 0);
     }
-    .bgCode.one{
+    .bgCode.one {
       color: $med-accent;
     }
-    .bgCode.two{
+    .bgCode.two {
       color: $dark-accent;
     }
-    .bgCode.three{
+    .bgCode.three {
       color: $primary-color;
     }
-    .bgCode.four{
+    .bgCode.four {
       color: $dark-accent;
     }
-    .bgCode.five{
+    .bgCode.five {
       color: $med-accent;
     }
   }
-  .codeRow.top{
+  .codeRow.top {
     align-items: center;
     justify-content: center;
   }
-  .codeRow.bottom{
+  .codeRow.bottom {
     align-items: center;
     justify-content: center;
   }
 }
 
-@keyframes fadeIn{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.bubbleRow{
+.bubbleRow {
   display: flex;
 
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-@keyframes code{
-  0%,100%{
+@keyframes code {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.15;
   }
-  50%{
+  50% {
     transform: scale(0.5);
   }
 }
 
-@for $i from 1 through 5{
-
-  .bgWrap:nth-child(#{$i}){
-
+@for $i from 1 through 5 {
+  .bgWrap:nth-child(#{$i}) {
     animation-delay: #{$i}s;
     -webkit-animation-delay: #{$i * 0.1}s;
   }

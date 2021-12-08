@@ -1,17 +1,12 @@
-.splashPage{
+.splashPage {
   position: relative;
   z-index: 2;
   margin-top: 0;
 
-
-
   animation: fadeIn 2s ease-in forwards;
   animation-delay: 2s;
 }
-header{
-
-
-
+header {
   position: relative;
   top: 0;
   z-index: 10;
@@ -33,45 +28,53 @@ header{
   opacity: 0;
 
   //Text Colors
-  .codeBracket {color: $med-accent;}
-  .main {color: $primary-color;}
-  .bracketed {color: $light-accent;}
-  .Typewriter__cursor {color: $light-accent;}
+  .codeBracket {
+    color: $med-accent;
+  }
+  .main {
+    color: $primary-color;
+  }
+  .bracketed {
+    color: $light-accent;
+  }
+  .Typewriter__cursor {
+    color: $light-accent;
+  }
 
   span {
     line-height: 1em;
     transition: font-size 1s;
   }
-  .main,.title{
-    span{
+  .main,
+  .title {
+    span {
       font-weight: 700;
     }
   }
-  .title{
+  .title {
     transition: all 1s;
     padding-top: 0rem;
     //height: 0;
 
-    span{
+    span {
       font-size: 0;
     }
   }
-  .main{
+  .main {
     padding-top: 1rem;
 
-    .name{
+    .name {
       display: flex;
       justify-content: center;
     }
   }
-  .name{
-    span{
+  .name {
+    span {
       font-size: 2rem;
     }
   }
 }
-nav{
-
+nav {
   display: flex;
 
   padding: 0.5rem;
@@ -89,28 +92,34 @@ nav{
   animation: fromBottom 2s ease-out forwards;
   animation-delay: 5s;
 
-  span{
+  span {
     font-size: 1.5rem;
     border-color: transparent;
     transition: border-color 0.5s;
 
-    &:hover{
+    &:hover {
       border-bottom: 0.5rem solid $med-accent;
       cursor: pointer;
     }
   }
-  span.active{
+  span.active {
     border-bottom: 0.5rem solid $primary-color;
   }
-
-
 }
 
-@keyframes fromBottom{
-  0%{margin-top: 100vh}
-  100%{margin-top: 0}
+@keyframes fromBottom {
+  0% {
+    margin-top: 100vh;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
-@keyframes fromTop{
-  0%{margin-bottom: 100vh}
-  100%{margin-top: 0}
+@keyframes fromTop {
+  0% {
+    margin-bottom: 100vh;
+  }
+  100% {
+    margin-top: 0;
+  }
 }

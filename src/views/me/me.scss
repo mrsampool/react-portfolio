@@ -1,7 +1,7 @@
-.me{
+.me {
   margin: 1rem;
 
-  .bio{
+  .bio {
     height: fit-content;
 
     //Spacing
@@ -11,14 +11,14 @@
     background-color: $dark-accent;
     border-radius: 1rem;
 
-    .self{
+    .self {
       //float: left;
       //width: 12rem;
 
       margin: 1rem;
       border-radius: 100%;
 
-      img{
+      img {
         width: 100%;
         max-width: 15rem;
         height: auto;
@@ -26,7 +26,7 @@
         border: 0.25rem solid $primary-color;
       }
     }
-    .connect{
+    .connect {
       border: 0.25rem solid $primary-color;
       padding: 1rem;
       border-radius: 1rem;

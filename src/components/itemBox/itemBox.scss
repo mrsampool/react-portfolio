@@ -1,5 +1,4 @@
-.itemBox{
-
+.itemBox {
   position: relative;
 
   //Sizing
@@ -14,7 +13,7 @@
   //Transitions
   transition: transform 0.25s;
 
-  .itemName{
+  .itemName {
     //Position
     position: absolute;
     bottom: -1rem;
@@ -28,7 +27,7 @@
 
     text-align: center;
 
-    p{
+    p {
       //Sizing & Spacing
       width: min-content;
       margin: 0 auto;
@@ -41,27 +40,25 @@
       transition: font-size 0.25s;
     }
   }
-  .itemIcon{
+  .itemIcon {
     width: 3rem;
 
-    img{
+    img {
       width: 100%;
       height: auto;
     }
-    svg{
+    svg {
       fill: $light-accent;
       width: 100%;
       height: auto;
     }
   }
 
-  &:hover{
+  &:hover {
     transform: scale(1.3);
     z-index: 2;
-    .itemName p{
+    .itemName p {
       font-size: 0.75rem;
     }
   }
-
-
 }

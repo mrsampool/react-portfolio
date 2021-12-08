@@ -1,8 +1,9 @@
-@keyframes dimin{
-  0%,50%{
-    color: hsl(180,50%,60%);
+@keyframes dimin {
+  0%,
+  50% {
+    color: hsl(180, 50%, 60%);
   }
-  100%{
-    color: hsla(0, 70%, 40%,0.75);
+  100% {
+    color: hsla(0, 70%, 40%, 0.75);
   }
 }

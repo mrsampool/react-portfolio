@@ -1,9 +1,5 @@
-
-
-.work{
-
-  .featProj{
-
+.work {
+  .featProj {
     //Sizing
     width: fit-content;
     height: fit-content;
@@ -14,13 +10,12 @@
     background-color: $dark-accent;
     border-radius: 1rem;
 
-    h2{
+    h2 {
       font-size: 1.5rem;
       transition: all 1s;
     }
 
-    .projThumb{
-
+    .projThumb {
       //Display
       display: flex;
       justify-content: center;
@@ -39,38 +34,36 @@
       //Misc
       transition: all 1s;
 
-      img{
+      img {
         transition: all 1s;
         width: 100%;
         height: auto;
       }
 
-      &:hover{
+      &:hover {
         border-color: $med-accent;
-        img{
+        img {
           transform: scale(1.1);
         }
       }
     }
-    .projThumb.active{
+    .projThumb.active {
       border-color: $primary-color;
     }
   }
-  .project{
-
+  .project {
     box-sizing: border-box;
 
     background-color: $dark-accent;
     padding: 1rem;
     border-radius: 1rem;
 
-    .projHeaders{
-      .col{
+    .projHeaders {
+      .col {
         border-bottom: 0.25rem solid $med-accent;
         margin-bottom: 1rem;
 
-        .projTitle{
-
+        .projTitle {
           //Spacing
           margin-bottom: 0;
           padding: 0;
@@ -82,20 +75,18 @@
           //Border
           border: none;
         }
-        .projSubtitle{
-
+        .projSubtitle {
           //Text
           font-size: 1.5rem;
           color: $light-accent;
         }
       }
     }
-    .projDescr p{
+    .projDescr p {
       color: $light-accent;
     }
-    .projScreens{
-      .screenframe{
-
+    .projScreens {
+      .screenframe {
         //Postion
         position: relative;
 
@@ -109,48 +100,46 @@
         justify-content: center;
         align-items: center;
 
-        svg{
+        svg {
           fill: $background-color;
           padding: 1%;
           height: fit-content;
         }
-        .screenshot{
+        .screenshot {
           //Position
           position: absolute;
           border: 0.2rem solid $primary-color;
           overflow: hidden;
           transition: border-color 0.5s;
 
-          img{
+          img {
             width: 100%;
             height: auto;
             transition: transform 0.5s;
           }
         }
 
-        &:hover{
-          .screenshot{
+        &:hover {
+          .screenshot {
             border-color: $med-accent;
 
-            img{
+            img {
               transform: scale(1.2);
             }
           }
         }
       }
-      .screenframe.desktop{
-
-        svg{
+      .screenframe.desktop {
+        svg {
           //Sizing
           width: 100%;
           height: auto;
 
-          path{
+          path {
             width: 100%;
           }
-
         }
-        .screenshot{
+        .screenshot {
           //Sizing Variables
           $screenshot-width: 84%;
           $screenshot-margin: (100% - $screenshot-width) / 2;
@@ -167,16 +156,15 @@
           border-radius: 5%;
         }
       }
-      .screenframe.mobile{
-
+      .screenframe.mobile {
         width: 100%;
         height: auto;
 
-        svg{
+        svg {
           width: 100%;
           height: auto;
         }
-        .screenshot{
+        .screenshot {
           //Sizing Variables
           $screenshot-width: 42%;
           $screenshot-margin: (100% - $screenshot-width) / 2;
@@ -195,5 +183,4 @@
       }
     }
   }
-
 }
