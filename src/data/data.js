@@ -50,6 +50,10 @@ import btDesktop from "./projImgs/bt/screens/btDesktop.png";
 import { icons } from "../components/icons/icons";
 
 export const tech = {
+  js: {
+    name: "JavaScript",
+    icon: jsLogo,
+  },
   react: {
     name: "React.js",
     icon: reactLogo,
@@ -58,9 +62,17 @@ export const tech = {
     name: "React Router",
     icon: reactRouterLogo,
   },
-  js: {
-    name: "JavaScript",
-    icon: jsLogo,
+  node: {
+    name: "Node.js",
+    icon: nodeLogo,
+  },
+  express: {
+    name: "Express.js",
+    icon: expressLogo,
+  },
+  postgres: {
+    name: "PostgreSQL",
+    icon: pgLogo,
   },
   css: {
     name: "CSS3",
@@ -81,18 +93,6 @@ export const tech = {
   jQuery: {
     name: "jQuery",
     icon: jQueryLogo,
-  },
-  node: {
-    name: "Node.js",
-    icon: nodeLogo,
-  },
-  express: {
-    name: "Express.js",
-    icon: expressLogo,
-  },
-  postgres: {
-    name: "PostgreSQL",
-    icon: pgLogo,
   },
   passport: {
     name: "PassportJS",
