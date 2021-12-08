@@ -101,19 +101,18 @@ export function Me(props) {
             </p>
 
             <p>
-              My professional focus is now exclusively in web development, and
-              my background in media production still comes in handy for web
-              contracts that require producing original media content. For my
-              latest project, an online learning app, I functioned as the sole
-              web developer in addition to managing all audio content production
-              and original illustration development. The app is available in
-              multiple languages (Spanish & coming soon-French), and includes a
-              separate audio production unit for the alternate-language audio.
+              I'm currently working as a Software Engineering Resident for
+              Hack Reactor, where I help students learn software engineering,
+              helping them debug their code and also assisting in instruction
+              for the complicated topics involved. I will finish this residency
+              in January 2022, and will be able to start a new role beginning
+              February 1, 2022.
             </p>
 
             <p>
-              Currently my primary technical strengths are JavaScript &
-              React.js, but you can see the wide assortment of technologies I
+              I primarily code in JavaScript, both on the front end (I have been
+              using ReactJS consistently since 2020) and server side via NodeJS.
+              You can see the wide assortment of specific technologies I
               have experience with listed in this page's "tech" box.
             </p>
 
