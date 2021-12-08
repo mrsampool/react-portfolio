@@ -26,8 +26,12 @@ import expressLogo from "./techIcons/ExpressJS.png";
 import gitLogo from "./techIcons/git.png";
 import sqlLogo from "./techIcons/sql.png";
 import javaLogo from "./techIcons/java.png";
+import pgLogo from './techIcons/pg.png';
+import passportLogo from './techIcons/passportjs.png';
 
 //Project Images
+import timeTaggerLogo from "./projImgs/tt/TimeTagger-banner.png";
+import ttDesktop from "./projImgs/tt/screens/ttDesktop.png";
 //GWE
 import gweLogo from "./projImgs/gwe/GWElogo.png";
 import gweDesktop from "./projImgs/gwe/screens/gweDesktop.png";
@@ -86,6 +90,14 @@ export const tech = {
     name: "Express.js",
     icon: expressLogo,
   },
+  postgres: {
+    name: "PostgreSQL",
+    icon: pgLogo,
+  },
+  passport: {
+    name: "PassportJS",
+    icon: passportLogo,
+  },
   git: {
     name: "Git",
     icon: gitLogo,
@@ -141,6 +153,33 @@ export const tech = {
 };
 
 export const projects = {
+  tt: {
+    title: "TimeTagger",
+    subtitle: "Fullstack Web App",
+    logo: timeTaggerLogo,
+    descr: [
+      `TimeTagger is a full-stack web app which lets users clock their working time with tags keep track of time spent on different tasks, projects, or clients.`,
+      `The app features a ReactJS frontend, a NodeJS backend, and a PostgreSQL database. User account creation and login are implemented with PassportJS.`,
+      `The majority of this app was built from scratch in 2 days, with additional features added intermittently.`,
+    ],
+    tech: [
+      tech.react,
+      tech.reactRouter,
+      tech.node,
+      tech.express,
+      tech.postgres,
+      tech.passport,
+      tech.jest,
+      tech.js,
+      tech.css,
+      tech.html,
+    ],
+    screenshots: {
+      desktop: ttDesktop,
+    },
+    demo: "https://mysterious-plateau-64771.herokuapp.com/",
+    code: "https://github.com/mrsampool/time-tagger",
+  },
   gwe: {
     title: "The Global Warming Express",
     subtitle: "Online Learning App (In Development)",
@@ -204,6 +243,7 @@ export const projects = {
     },
     site: "https://txranchresort.com/",
   },
+  /*
   bt: {
     title: "BetaTron Electronics",
     subtitle: "Brochure Site",
@@ -219,6 +259,7 @@ export const projects = {
     },
     site: "http://www.betatronelectronics.com/",
   },
+   */
 };
 
 export const connect = [

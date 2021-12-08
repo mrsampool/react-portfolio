@@ -192,7 +192,7 @@ export function ProjectSummary(props) {
 //WORK
 export function Work(props) {
   // STATE
-  const [projectId, setProjectId] = useState("gwe");
+  const [projectId, setProjectId] = useState("tt");
 
   return (
     <div className={"work row no-gutters"}>
