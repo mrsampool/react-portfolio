@@ -5,12 +5,12 @@
 @import "elements";
 
 //Components
-@import "../header/header";
-@import "../bg/bg";
-@import "../../views/work/work";
-@import "../../views/me/me";
-@import "../techList/techList.scss";
-@import "../itemBox/itemBox.scss";
+@import "../components/header/header";
+@import "../components/bg/bg";
+@import "../views/work/work.css";
+@import "../views/me/me.css";
+@import "../components/techList/techList";
+@import "../components/itemBox/itemBox";
 
 html {
   //width: 100vw;

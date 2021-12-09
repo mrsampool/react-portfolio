@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 
 //Data
-import { projects } from "../../data/data";
 
 //Sub-Components (Imports)
 import { icons } from "../../components/icons/icons";
 import { TechList } from "../../components/techList/techList";
 import { Button } from "../../components/elements/elements";
+import {projects} from "../../data/projects";
 export function FeaturedThumb(props) {
   const project = projects[props.projectId];
 

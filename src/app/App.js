@@ -2,10 +2,10 @@
 import React, { useState, useEffect } from "react";
 
 //Sub-Components1
-import { Header } from "../header/header";
-import { Work } from "../../views/work/work";
-import { Me } from "../../views/me/me";
-import { BG } from "../bg/bg";
+import { Header } from "../components/header/header";
+import { Work } from "../views/work/work";
+import { Me } from "../views/me/me";
+import { BG } from "../components/bg/bg";
 
 //Style Sheet
 import "./app.css";

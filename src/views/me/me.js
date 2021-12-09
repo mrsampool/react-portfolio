@@ -2,7 +2,6 @@
 import React from "react";
 
 //Data
-import { tech } from "../../data/data";
 
 //Sub-Components
 import { TechList } from "../../components/techList/techList";
@@ -14,6 +13,7 @@ import self from "./self.png";
 import linkedIn from "./linkedin.svg";
 import github from "../../data/techIcons/github.png";
 import ig from "./ig.svg";
+import {tech} from "../../data/tech";
 
 export function Connect() {
   return (
