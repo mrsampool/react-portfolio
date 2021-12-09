@@ -39,7 +39,7 @@ export function SplashTitle(props) {
             .pauseFor(4500)
             .typeString(
               "<span class='codeBracket'>{</span>" +
-                "<span class='bracketed'>web</span>" +
+                "<span class='bracketed'>fullStack</span>" +
                 "<span class='codeBracket'>}</span>" +
                 "<span class='main'>Dev</span>"
             )
