@@ -98,7 +98,6 @@ button {
   transition: all 0.5s ease-out;
 }
 button:hover {
-  transform: scale(1.2);
   background-color: #f4b860;
   color: #c83e4d;
 }
@@ -420,7 +419,7 @@ main {
   height: 100vh;
 }
 .App.splash .splashPage {
-  margin-top: calc(50vh - 11vw);
+  margin-top: calc(50vh - 10rem);
   overflow-y: hidden;
   transition: margin-top 2s;
 }

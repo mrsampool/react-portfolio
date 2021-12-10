@@ -30,9 +30,6 @@
 .work .featProj .projThumb:hover {
   border-color: #c83e4d;
 }
-.work .featProj .projThumb:hover img {
-  transform: scale(1.1);
-}
 .work .featProj .projThumb.active {
   border-color: #f4b860;
 }
