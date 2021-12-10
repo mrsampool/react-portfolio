@@ -1,10 +1,12 @@
 .splashPage {
+  display: flex;
+  align-items: center;
   position: relative;
   z-index: 2;
   margin-top: 0;
-
-  animation: fadeIn 2s ease-in forwards;
-  animation-delay: 2s;
+  //height: 20rem;
+  animation: fadeIn 1s ease-in forwards;
+  //animation-delay: 2s;
 }
 header {
   position: relative;
@@ -21,12 +23,12 @@ header {
   //padding: 1rem;
 
   background-color: $dark-accent;
-
-  transition: all 1s;
+/*
+  transition: all 0.5s;
   animation: fadeIn 2s ease-out forwards;
-  animation-delay: 4s;
+  animation-delay: 0s;
   opacity: 0;
-
+*/
   //Text Colors
   .codeBracket {
     color: $med-accent;
@@ -89,8 +91,8 @@ nav {
   //Misc
   margin-top: 100vh;
   transition: all 1s;
-  animation: fromBottom 2s ease-out forwards;
-  animation-delay: 5s;
+  animation: fromBottom 1s ease-out forwards;
+  animation-delay: 1.5s;
 
   span {
     font-size: 1.5rem;

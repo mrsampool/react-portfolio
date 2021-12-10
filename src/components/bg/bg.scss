@@ -21,7 +21,9 @@
   justify-content: space-evenly;
   overflow: hidden;
 
-  animation: fadeIn 2s ease-in;
+  opacity: 0;
+
+  animation: fadeIn 1s ease-in forwards;
 
   .codeRow {
     width: 100%;

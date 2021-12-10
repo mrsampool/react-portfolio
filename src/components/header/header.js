@@ -14,7 +14,7 @@ export function SplashName(props) {
         }}
         onInit={(typewriter) => {
           typewriter
-            .pauseFor(4500)
+            .pauseFor(1000)
             .typeString(
               "<span class='main'>SAM</span>" +
                 "<span class='codeBracket'>{</span>" +
@@ -36,7 +36,7 @@ export function SplashTitle(props) {
         }}
         onInit={(typewriter) => {
           typewriter
-            .pauseFor(4500)
+            .pauseFor(1200)
             .typeString(
               "<span class='codeBracket'>{</span>" +
                 "<span class='bracketed'>fullStack</span>" +

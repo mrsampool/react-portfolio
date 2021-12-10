@@ -24,8 +24,8 @@ export function App(props) {
 
       <main className={"row no-gutters"}>
         <div className={"col"}>
-          {page === "work" ? <Work /> : ""}
-          {page === "me" ? <Me /> : ""}
+          {page === "work" && <Work />}
+          {page === "me" && <Me />}
         </div>
       </main>
     </div>

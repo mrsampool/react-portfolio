@@ -104,11 +104,12 @@ button:hover {
 }
 
 .splashPage {
+  display: flex;
+  align-items: center;
   position: relative;
   z-index: 2;
   margin-top: 0;
-  animation: fadeIn 2s ease-in forwards;
-  animation-delay: 2s;
+  animation: fadeIn 1s ease-in forwards;
 }
 
 header {
@@ -120,10 +121,12 @@ header {
   align-items: center;
   width: 100%;
   background-color: #4a5859;
-  transition: all 1s;
-  animation: fadeIn 2s ease-out forwards;
-  animation-delay: 4s;
-  opacity: 0;
+  /*
+    transition: all 0.5s;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 0s;
+    opacity: 0;
+  */
 }
 header .codeBracket {
   color: #c83e4d;
@@ -171,8 +174,8 @@ nav {
   color: #f4d6cc;
   margin-top: 100vh;
   transition: all 1s;
-  animation: fromBottom 2s ease-out forwards;
-  animation-delay: 5s;
+  animation: fromBottom 1s ease-out forwards;
+  animation-delay: 1.5s;
 }
 nav span {
   font-size: 1.5rem;
@@ -216,7 +219,8 @@ nav span.active {
   flex-direction: column;
   justify-content: space-evenly;
   overflow: hidden;
-  animation: fadeIn 2s ease-in;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
 }
 .bgWrap .codeRow {
   width: 100%;
@@ -444,6 +448,12 @@ main {
 @media (max-width: 768px) {
   .App.splash .splashPage {
     margin-top: 0;
+    height: auto;
+  }
+}
+@media (min-width: 769px) {
+  .App.splash .splashPage {
+    height: 20rem;
   }
 }
 @media (max-height: 600px) {
