@@ -1,18 +1,127 @@
-/* Error: This file is already being loaded.
- *   ,
- * 1 | @import "../work/work";
- *   |         ^^^^^^^^^^^^^^
- *   '
- *   ../app/app.scss 1:9  @import
- *   work.scss 1:9        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-    "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: This file is already being loaded.\a   \2577 \a 1 \2502  @import "../work/work";\a   \2502          ^^^^^^^^^^^^^^\a   \2575 \a   ../app/app.scss 1:9  @import\a   work.scss 1:9        root stylesheet';
+.work .featProj {
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #4a5859;
+  border-radius: 1rem;
 }
+.work .featProj h2 {
+  font-size: 1.5rem;
+  transition: all 1s;
+}
+.work .featProj .projThumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 15rem;
+  height: 7rem;
+  margin: 0.5rem;
+  border: 0.5rem solid #f4d6cc;
+  background-color: white;
+  border-radius: 1rem;
+  transition: all 1s;
+}
+.work .featProj .projThumb img {
+  transition: all 1s;
+  width: 100%;
+  height: auto;
+}
+.work .featProj .projThumb:hover {
+  border-color: #c83e4d;
+}
+.work .featProj .projThumb:hover img {
+  transform: scale(1.1);
+}
+.work .featProj .projThumb.active {
+  border-color: #f4b860;
+}
+.work .featProj .projThumb.asc {
+  background-color: #1C5253;
+}
+.work .featProj .projThumb.tt {
+  background-color: #048a81;
+}
+.work .project {
+  box-sizing: border-box;
+  background-color: #4a5859;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.work .project .projHeaders .col {
+  border-bottom: 0.25rem solid #c83e4d;
+  margin-bottom: 1rem;
+}
+.work .project .projHeaders .col .projTitle {
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 2rem;
+  color: #f4b860;
+  border: none;
+}
+.work .project .projHeaders .col .projSubtitle {
+  font-size: 1.5rem;
+  color: #f4d6cc;
+}
+.work .project .projDescr p {
+  color: #f4d6cc;
+}
+.work .project .projScreens .screenframe {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work .project .projScreens .screenframe svg {
+  fill: #32373b;
+  padding: 1%;
+  height: fit-content;
+}
+.work .project .projScreens .screenframe .screenshot {
+  position: absolute;
+  border: 0.2rem solid #f4b860;
+  overflow: hidden;
+  transition: border-color 0.5s;
+}
+.work .project .projScreens .screenframe .screenshot img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s;
+}
+.work .project .projScreens .screenframe:hover .screenshot {
+  border-color: #c83e4d;
+}
+.work .project .projScreens .screenframe.desktop svg {
+  width: 100%;
+  height: auto;
+}
+.work .project .projScreens .screenframe.desktop svg path {
+  width: 100%;
+}
+.work .project .projScreens .screenframe.desktop .screenshot {
+  top: 20%;
+  left: 8%;
+  width: 84%;
+  height: auto;
+  border-radius: 5%;
+}
+.work .project .projScreens .screenframe.mobile {
+  width: 100%;
+  height: auto;
+}
+.work .project .projScreens .screenframe.mobile svg {
+  width: 100%;
+  height: auto;
+}
+.work .project .projScreens .screenframe.mobile .screenshot {
+  top: 5%;
+  left: 29%;
+  width: 42%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=work.css.map */

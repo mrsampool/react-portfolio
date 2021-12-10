@@ -1,5 +1,10 @@
+// Data
+import {tech} from "./tech";
+
+// Images
 import timeTaggerLogo from "./projImgs/tt/TimeTagger-banner.png";
 import ttDesktop from "./projImgs/tt/screens/ttDesktop.png";
+import ttMobile from "./projImgs/tt/screens/ttMobile.png"
 import gweLogo from "./projImgs/gwe/GWElogo.png";
 import gweDesktop from "./projImgs/gwe/screens/gweDesktop.png";
 import gweMobile from "./projImgs/gwe/screens/gweMobile.png";
@@ -9,7 +14,9 @@ import lvrMobile from "./projImgs/lvr/screens/lvrMobile.png";
 import txrLogo from "./projImgs/txr/txrLogo.png";
 import txrDesktop from "./projImgs/txr/screens/txrDesktop.png";
 import txrMobile from "./projImgs/txr/screens/txrMobile.png";
-import {tech} from "./tech";
+import asqDesktop from "./projImgs/asq/screens/asqDesktop.png";
+import asqMobile from "./projImgs/asq/screens/asqMobile.png";
+import asqLogo from "./projImgs/asq/asqLogo.png";
 
 export const projects = {
   tt: {
@@ -17,9 +24,8 @@ export const projects = {
     subtitle: "Fullstack Web App",
     logo: timeTaggerLogo,
     descr: [
-      `TimeTagger is a full-stack web app which lets users clock their working time with tags keep track of time spent on different tasks, projects, or clients.`,
-      `The app features a ReactJS frontend, a NodeJS backend, and a PostgreSQL database. User account creation and login are implemented with PassportJS.`,
-      `The majority of this app was built from scratch in 2 days, with additional features added intermittently.`,
+      `TimeTagger is a full-stack web app which lets users clock their working time with tags keep track of time spent on different tasks, projects, or clients. I built this app from scratch by myself, originally during a 2-day MVP project, adding additional functionality intermittently since then.`,
+      `The app features a ReactJS frontend, a NodeJS backend, and a PostgreSQL database. User authentication is implemented with PassportJS.`,
     ],
     tech: [
       tech.react,
@@ -35,9 +41,37 @@ export const projects = {
     ],
     screenshots: {
       desktop: ttDesktop,
+      mobile: ttMobile
     },
     demo: "https://mysterious-plateau-64771.herokuapp.com/",
     code: "https://github.com/mrsampool/time-tagger",
+  },
+  asc: {
+    title: "Ascent Squad",
+    subtitle: "Mock E-Commerce Site",
+    logo: asqLogo,
+    logoBG: '##DCF763',
+    descr: [
+      `Mock e-commerce app frontend built with two other developers harnessing an existing API for the product data. As the most experienced with CSS, I led the global style decisions for the app, and provided the other two developers with guidance on styles for their UI elements.`,
+      'The app achieved lighthouse scores in the 90s by optimizing our code and implementing a data caching algorithm to eliminate errors caused by the inconsistent 3rd-party API.',
+      'The app was developed in a true Test-Driven workflow using Jest & React-Testing-Library. On completion the app had 87% test coverage.',
+    ],
+    tech: [
+      tech.react,
+      tech.reactRouter,
+      tech.jest,
+      tech.node,
+      tech.express,
+      tech.js,
+      tech.css,
+      tech.html,
+    ],
+    screenshots: {
+      desktop: asqDesktop,
+      mobile: asqMobile,
+    },
+    demo: "http://204.236.152.139/",
+    code: "https://github.com/mrsampool/projCatwalk",
   },
   gwe: {
     title: "The Global Warming Express",

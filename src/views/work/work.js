@@ -2,12 +2,13 @@
 import React, { useState } from "react";
 
 //Data
+import {projects} from "../../data/projects";
 
 //Sub-Components (Imports)
 import { icons } from "../../components/icons/icons";
 import { TechList } from "../../components/techList/techList";
 import { Button } from "../../components/elements/elements";
-import {projects} from "../../data/projects";
+
 export function FeaturedThumb(props) {
   const project = projects[props.projectId];
 
@@ -23,7 +24,11 @@ export function FeaturedThumb(props) {
   }
 
   return (
-    <button className={`projThumb ${handleFocus()}`} onClick={handleClick}>
+    <button
+      className={`projThumb ${handleFocus()} ${props.projectId}`}
+      style={{backgroundColor: project.logoBG}}
+      onClick={handleClick}
+    >
       <img src={project.logo} />
     </button>
   );

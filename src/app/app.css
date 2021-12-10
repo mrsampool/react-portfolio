@@ -1,3 +1,5 @@
+@import "../views/work/work.css";
+@import "../views/me/me.css";
 h1,
 h2,
 h3,
@@ -77,8 +79,7 @@ i {
   /*20px*/
 }
 @keyframes dimin {
-  0%,
-  50% {
+  0%, 50% {
     color: #66cccc;
   }
   100% {
@@ -276,8 +277,7 @@ nav span.active {
 }
 
 @keyframes code {
-  0%,
-  100% {
+  0%, 100% {
     transform: scale(1);
     opacity: 0.15;
   }
@@ -308,155 +308,6 @@ nav span.active {
 .bgWrap:nth-child(5) {
   animation-delay: 5s;
   -webkit-animation-delay: 0.5s;
-}
-
-.work .featProj {
-  width: fit-content;
-  height: fit-content;
-  padding: 1rem;
-  margin: 1rem;
-  background-color: #4a5859;
-  border-radius: 1rem;
-}
-.work .featProj h2 {
-  font-size: 1.5rem;
-  transition: all 1s;
-}
-.work .featProj .projThumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 15rem;
-  padding: 1rem;
-  margin: 1rem;
-  border: 0.5rem solid #f4d6cc;
-  background-color: white;
-  border-radius: 1rem;
-  transition: all 1s;
-}
-.work .featProj .projThumb img {
-  transition: all 1s;
-  width: 100%;
-  height: auto;
-}
-.work .featProj .projThumb:hover {
-  border-color: #c83e4d;
-}
-.work .featProj .projThumb:hover img {
-  transform: scale(1.1);
-}
-.work .featProj .projThumb.active {
-  border-color: #f4b860;
-}
-.work .project {
-  box-sizing: border-box;
-  background-color: #4a5859;
-  padding: 1rem;
-  border-radius: 1rem;
-}
-.work .project .projHeaders .col {
-  border-bottom: 0.25rem solid #c83e4d;
-  margin-bottom: 1rem;
-}
-.work .project .projHeaders .col .projTitle {
-  margin-bottom: 0;
-  padding: 0;
-  font-size: 2rem;
-  color: #f4b860;
-  border: none;
-}
-.work .project .projHeaders .col .projSubtitle {
-  font-size: 1.5rem;
-  color: #f4d6cc;
-}
-.work .project .projDescr p {
-  color: #f4d6cc;
-}
-.work .project .projScreens .screenframe {
-  position: relative;
-  height: fit-content;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.work .project .projScreens .screenframe svg {
-  fill: #32373b;
-  padding: 1%;
-  height: fit-content;
-}
-.work .project .projScreens .screenframe .screenshot {
-  position: absolute;
-  border: 0.2rem solid #f4b860;
-  overflow: hidden;
-  transition: border-color 0.5s;
-}
-.work .project .projScreens .screenframe .screenshot img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.5s;
-}
-.work .project .projScreens .screenframe:hover .screenshot {
-  border-color: #c83e4d;
-}
-.work .project .projScreens .screenframe:hover .screenshot img {
-  transform: scale(1.2);
-}
-.work .project .projScreens .screenframe.desktop svg {
-  width: 100%;
-  height: auto;
-}
-.work .project .projScreens .screenframe.desktop svg path {
-  width: 100%;
-}
-.work .project .projScreens .screenframe.desktop .screenshot {
-  top: 20%;
-  left: 8%;
-  width: 84%;
-  height: auto;
-  border-radius: 5%;
-}
-.work .project .projScreens .screenframe.mobile {
-  width: 100%;
-  height: auto;
-}
-.work .project .projScreens .screenframe.mobile svg {
-  width: 100%;
-  height: auto;
-}
-.work .project .projScreens .screenframe.mobile .screenshot {
-  top: 5%;
-  left: 29%;
-  width: 42%;
-  height: auto;
-  border-radius: 1rem;
-}
-
-.me {
-  margin: 1rem;
-}
-.me .bio {
-  height: fit-content;
-  padding: 1rem;
-  background-color: #4a5859;
-  border-radius: 1rem;
-}
-.me .bio .self {
-  margin: 1rem;
-  border-radius: 100%;
-}
-.me .bio .self img {
-  width: 100%;
-  max-width: 15rem;
-  height: auto;
-  border-radius: 100%;
-  border: 0.25rem solid #f4b860;
-}
-.me .bio .connect {
-  border: 0.25rem solid #f4b860;
-  padding: 1rem;
-  border-radius: 1rem;
 }
 
 .techList {
